@@ -37,8 +37,8 @@ section {
      object-position: top;
   border-radius: 50%;
   border: 2px solid #333;
-  -webkit-filter: drop-shadow(16px 16px 20px rgba(26, 26, 26, 0.253));
-          filter: drop-shadow(16px 16px 20px rgba(26, 26, 26, 0.253));
+  -webkit-filter: drop-shadow(16px 16px 20px rgba(26, 26, 26, 0.651));
+          filter: drop-shadow(16px 16px 20px rgba(26, 26, 26, 0.651));
 }
 
 @media (max-width: 600px) {
@@ -106,10 +106,6 @@ section {
   }
 }
 
-.contact i:hover {
-  color: #2497da;
-}
-
 .contact h4 {
   display: inline-block;
 }
@@ -139,6 +135,17 @@ section {
         -ms-flex-pack: start;
             justify-content: start;
   }
+}
+
+.contact .contact-item a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  text-decoration: none;
+}
+
+.contact .contact-item a:hover {
+  color: #2497da;
 }
 
 .nav-item {
