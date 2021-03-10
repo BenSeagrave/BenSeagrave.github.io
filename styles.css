@@ -1,0 +1,157 @@
+body {
+  background: #2a2a36;
+  color: white;
+}
+
+section {
+  margin: 200px 0;
+}
+
+@media (max-width: 600px) {
+  section {
+    margin: 100px 0;
+  }
+}
+
+.about {
+  max-width: 800px;
+  margin-top: 100px;
+}
+
+.about h1 {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .about {
+    margin-top: 50px;
+  }
+}
+
+.about .avatar {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+  border: 2px solid #333;
+  -webkit-filter: drop-shadow(16px 16px 20px rgba(26, 26, 26, 0.253));
+          filter: drop-shadow(16px 16px 20px rgba(26, 26, 26, 0.253));
+}
+
+@media (max-width: 600px) {
+  .about .avatar {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about p {
+    font-size: 1rem;
+    line-height: 2;
+  }
+}
+
+.skills i {
+  font-size: 4rem;
+  margin: 10px 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.2);
+}
+
+.skills i:hover {
+  color: #2497da;
+}
+
+.projects img {
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.199);
+  width: 100%;
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .projects img {
+    width: 80%;
+  }
+}
+
+.projects hr {
+  margin: 3rem auto;
+  width: 90%;
+}
+
+.contact i {
+  font-size: 4rem;
+  margin: 0 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 600px) {
+  .contact i {
+    font-size: 2.5rem;
+  }
+}
+
+.contact i:hover {
+  color: #2497da;
+}
+
+.contact h4 {
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .contact h4 {
+    font-size: 1rem;
+  }
+}
+
+.contact .contact-item {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .contact .contact-item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c2a a {
+  color: black !important;
+}
+/*# sourceMappingURL=styles.css.map */
