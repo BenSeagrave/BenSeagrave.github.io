@@ -25,11 +25,11 @@
 
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">projects</a>
+            <a class="nav-link active" aria-current="page" href="#projects">projects</a>
           </li>
 
           <li class="nav-item ">
-            <a class="nav-link align-middle" href="#">contact</a>
+            <a class="nav-link align-middle" href="#contact">contact</a>
           </li>
           <li class="nav-item btn btn-light c2a">
             <a class="nav-link" href="#">download cv</a>
@@ -72,7 +72,7 @@
     </section>
 
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h1 class="display-4 mb-5">Projects</h1>
 
       <div class="row d-flex justify-content-center">
@@ -110,12 +110,12 @@
         </div>
       </div>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h1 class="display-4 mb-5">Contact</h1>
         <div class="row">
           <div class="col">
             <div class="contact-item">
-              <a href="mailto:btseagrave@gmail.com">
+              <a href="mailto:btseagrave@gmail.com" target="_blank">
                 <i class="fas fa-envelope"></i>
                 <h4>btseagrave@gmail.com</h4>
               </a>
@@ -127,14 +127,14 @@
               </a>
             </div>
             <div class="contact-item">
-              <a href="https://github.com/BenSeagrave/">
+              <a href="https://github.com/BenSeagrave/" target="_blank">
                 <i class="fab fa-github"></i>
                 <h4>github.com/BenSeagrave</h4>
               </a>
 
             </div>
             <div class="contact-item">
-              <a href="https://www.linkedin.com/in/ben-seagrave">
+              <a href="https://www.linkedin.com/in/ben-seagrave" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
                 <h4>https://www.linkedin.com/in/ben-seagrave</h4>
               </a>
@@ -144,9 +144,29 @@
       </section>
   </div>
 
+  <a href="#" class="btn btn-outline-info btn-lg back-to-top" role="button"><i class="fas fa-arrow-circle-up"></i></a>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
+  <script>
+
+    const scrollButton = document.querySelector(".back-to-top");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollButton.classList.add("show")
+      } else {
+        scrollButton.classList.remove("show")
+      }
+    })
+
+    scrollButton.addEventListener("click", () => {
+      window.scrollTo(0, 0);
+    })
+
+
+  </script>
 </body>
 
 </html>
