@@ -61,12 +61,13 @@
       <h1 class="display-4 mb-5">Skills</h1>
       <div class="row">
         <div class="col">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js-square"></i>
-          <i class="fab fa-sass"></i>
-          <i class="fab fa-git-square"></i>
-          <i class="fab fa-react"></i>
+
+          <i class="fab fa-html5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML5"></i>
+          <i class="fab fa-css3-alt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="CSS3"></i>
+          <i class="fab fa-js-square" data-bs-toggle="tooltip" data-bs-placement="bottom" title="JavaScript"></i>
+          <i class="fab fa-sass" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sass"></i>
+          <i class="fab fa-git-square" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Git"></i>
+          <i class="fab fa-react" data-bs-toggle="tooltip" data-bs-placement="bottom" title="ReactJS"></i>
         </div>
       </div>
     </section>
@@ -115,7 +116,7 @@
         <div class="row">
           <div class="col">
             <div class="contact-item">
-              <a href="mailto:btseagrave@gmail.com" target="_blank">
+              <a href="mailto:btseagrave@gmail.com">
                 <i class="fas fa-envelope"></i>
                 <h4>btseagrave@gmail.com</h4>
               </a>
@@ -164,6 +165,35 @@
     scrollButton.addEventListener("click", () => {
       window.scrollTo(0, 0);
     })
+
+
+    // const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    const setupTooltips = (e) => {
+      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      tooltipTriggerList.map(function (tooltipTriggerEl) {
+        if (e.matches) {
+          let tooltip = new bootstrap.Tooltip(tooltipTriggerEl, {
+            trigger: 'manual',
+          });
+          tooltip.show();
+        } else {
+          let tooltip = new bootstrap.Tooltip(tooltipTriggerEl, {
+            trigger: 'hover focus',
+          });
+        }
+        return;
+      })
+    }
+
+
+
+    mediaQuery.addListener(setupTooltips);
+    setupTooltips(mediaQuery);
+
+
+
 
 
   </script>

@@ -7,7 +7,7 @@ section {
   margin: 200px 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   section {
     margin: 100px 0;
   }
@@ -22,7 +22,7 @@ section {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about {
     margin-top: 50px;
   }
@@ -41,20 +41,20 @@ section {
           filter: drop-shadow(16px 16px 20px rgba(26, 26, 26, 0.651));
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about .avatar {
     height: 150px;
     width: 150px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about h1 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about p {
     font-size: 1rem;
     line-height: 2;
@@ -63,7 +63,7 @@ section {
 
 .skills i {
   font-size: 4rem;
-  margin: 10px 30px;
+  margin: 20px 30px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.2);
@@ -82,7 +82,7 @@ section {
           box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .projects img {
     width: 80%;
   }
@@ -98,7 +98,7 @@ section {
   margin: 0 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .contact i {
     font-size: 2.5rem;
   }
@@ -108,7 +108,7 @@ section {
   display: inline-block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .contact h4 {
     font-size: 1rem;
   }
@@ -127,7 +127,7 @@ section {
           justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .contact .contact-item {
     -webkit-box-pack: start;
         -ms-flex-pack: start;

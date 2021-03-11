@@ -5,7 +5,7 @@ body {
 
 section {
   margin: 200px 0;
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     margin: 100px 0;
   }
 }
@@ -18,13 +18,13 @@ section {
   }
 }
 .about {
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     margin-top: 50px;
   }
   .avatar {
     height: 200px;
     width: 200px;
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       height: 150px;
       width: 150px;
     }
@@ -35,12 +35,12 @@ section {
     filter: drop-shadow(16px 16px 20px rgba(26, 26, 26, 0.651));
   }
   h1 {
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       font-size: 2rem;
     }
   }
   p {
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       font-size: 1rem;
       line-height: 2;
     }
@@ -50,7 +50,7 @@ section {
 .skills {
   i {
     font-size: 4rem;
-    margin: 10px 30px;
+    margin: 20px 30px;
     transition: all 0.3s;
     box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.2);
   }
@@ -65,7 +65,7 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.199);
     width: 100%;
     box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       width: 80%;
     }
   }
@@ -80,14 +80,14 @@ section {
   i {
     font-size: 4rem;
     margin: 0 30px;
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       font-size: 2.5rem;
     }
   }
 
   h4 {
     display: inline-block;
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       // font-weight: normal;
       font-size: 1rem;
     }
@@ -97,7 +97,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       justify-content: start;
     }
     a {

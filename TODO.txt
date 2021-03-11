@@ -1,0 +1,1 @@
+- Make contact item tooltip disappear when resizing back to large screen.
