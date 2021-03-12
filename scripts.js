@@ -12,7 +12,6 @@ scrollButton.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-// const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 const setupTooltips = (e) => {
