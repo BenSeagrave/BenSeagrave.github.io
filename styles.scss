@@ -1,3 +1,7 @@
+:root {
+  --blue: #0dcaf0;
+}
+
 body {
   background: rgb(42, 42, 54);
   color: white;
@@ -56,7 +60,7 @@ section {
     box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.2);
   }
   i:hover {
-    color: rgb(36, 151, 218);
+    color: var(--blue);
   }
 }
 
@@ -109,7 +113,7 @@ section {
       align-items: center;
       justify-content: center;
       &:hover {
-        color: rgb(36, 151, 218);
+        color: var(--blue);
       }
     }
   }
@@ -125,18 +129,13 @@ section {
   a {
     color: black !important;
   }
-  // background-color: rgb(36, 151, 218);
 }
 
 .back-to-top {
   position: fixed;
   right: -125px;
   bottom: 25px;
-  // transform: translateX(100px);
   transition: transform 0.6s ease-in-out, background-color 0.2s ease-in-out;
-  // &:hover {
-  //   background-color: #17a2b8;
-  // }
 }
 .show {
   transform: translateX(-150px);

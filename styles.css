@@ -1,3 +1,7 @@
+:root {
+  --blue: #0dcaf0;
+}
+
 body {
   background: #2a2a36;
   color: white;
@@ -75,7 +79,7 @@ section {
 }
 
 .skills i:hover {
-  color: #2497da;
+  color: var(--blue);
 }
 
 .projects img {
@@ -156,7 +160,7 @@ section {
 }
 
 .contact .contact-item a:hover {
-  color: #2497da;
+  color: var(--blue);
 }
 
 .nav-item {
