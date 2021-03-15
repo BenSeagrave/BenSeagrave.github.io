@@ -2,9 +2,9 @@ const scrollButton = document.querySelector(".back-to-top");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 200) {
-    scrollButton.classList.add("show");
+    scrollButton.classList.add("appear");
   } else {
-    scrollButton.classList.remove("show");
+    scrollButton.classList.remove("appear");
   }
 });
 
@@ -16,7 +16,7 @@ const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 const setupTooltips = (e) => {
   const tooltipTriggerList = [].slice.call(
-    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    document.querySelectorAll('i[data-bs-toggle="tooltip"]')
   );
   tooltipTriggerList.map(function (tooltipTriggerEl) {
     if (e.matches) {
