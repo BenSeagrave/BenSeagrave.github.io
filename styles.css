@@ -166,6 +166,10 @@ section {
           align-items: center;
 }
 
+.c2a {
+  position: relative;
+}
+
 .c2a a {
   color: black !important;
 }
@@ -174,14 +178,44 @@ section {
   position: fixed;
   right: -125px;
   bottom: 25px;
-  -webkit-transition: background-color 0.2s ease-in-out, -webkit-transform 0.6s ease-in-out;
-  transition: background-color 0.2s ease-in-out, -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, background-color 0.2s ease-in-out;
-  transition: transform 0.6s ease-in-out, background-color 0.2s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  -webkit-transition: background-color 0.2s, -webkit-transform 0.6s ease-in-out;
+  transition: background-color 0.2s, -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, background-color 0.2s;
+  transition: transform 0.6s ease-in-out, background-color 0.2s, -webkit-transform 0.6s ease-in-out;
 }
 
-.show {
+.appear {
   -webkit-transform: translateX(-150px);
           transform: translateX(-150px);
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 350;
+  }
+  50% {
+    stroke-dashoffset: -0;
+  }
+  60% {
+    stroke-dashoffset: -350;
+  }
+  100% {
+    stroke-dashoffset: -350;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 350;
+  }
+  50% {
+    stroke-dashoffset: -0;
+  }
+  60% {
+    stroke-dashoffset: -350;
+  }
+  100% {
+    stroke-dashoffset: -350;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

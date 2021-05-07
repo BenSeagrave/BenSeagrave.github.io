@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Ben Seagrave</a>
+      <!-- <a class="navbar-brand" href="#">Ben Seagrave</a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,18 +33,26 @@
           </li>
           <li class="nav-item btn btn-sm btn-info c2a">
             <a class="nav-link" href="./BenSeagraveCV.pdf" target="_blank">download cv</a>
+            <!-- <svg id="arrow-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 163.1"
+              width="100">
+              <path class="path"
+                d="M.8 159.1c5.9 2.7 12.8 2.4 19 .4s11.6-5.5 17-9.1a117.8 117.8 0 0032.9-30.1c10.7-16 14.4-35.6 16-54.8a756 756 0 017.7-58.8A.8.8 0 0092 6l-23.6 38c7-12.5 16.3-29.7 24.3-41.6a1.2 1.2 0 012.1.2c5.7 11.6 11.2 29.3 17.5 39.9"
+                fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="4" />
+            </svg> -->
           </li>
+
         </ul>
       </div>
     </div>
+
   </nav>
   <div class="container text-center">
-    <section class="about mx-auto">
+    <section class="about mx-auto" id="welcome-text">
       <div class="row about mx-auto">
         <div class="col">
           <img class="avatar" src="./images/avatar.jpg" alt="Avatar" srcset="">
           <div class="col">
-            <h1 class="display-4  mb-4">Hello, I'm Ben. 👋</h1>
+            <h1 id="welcome-text" class="display-4  mb-4">Hello, I'm Ben 👋</h1>
           </div>
           <div class="col text-center">
             <p class="lead">I'm a Frontend Developer based in Aylesbury, Buckinghamshire.</p>
@@ -61,7 +69,7 @@
     <section class="skills">
       <h1 class="display-4 mb-5">Skills</h1>
       <div class="row">
-        <div class="col">
+        <div class="col" id="skills-icons">
 
           <i class="fab fa-html5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML5"></i>
           <i class="fab fa-css3-alt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="CSS3"></i>
@@ -77,11 +85,11 @@
     <section class="projects" id="projects">
       <h1 class="display-4 mb-5">Projects</h1>
 
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-4">
+      <div class="row d-flex justify-content-center project">
+        <div class="col-md-4 project-image">
           <img src="./images/countdown.gif" alt="" srcset="" width="500">
         </div>
-        <div class="col-md-6 d-flex flex-column justify-content-center">
+        <div class="col-md-6 d-flex flex-column justify-content-center project-content">
           <p>
             An animated countdown timer but with ReactJS which uses CSS animations to emulate a realistic flip clock. It
             incorperates custom hooks and mobile-first styling with styled-components.
@@ -98,11 +106,11 @@
         <hr>
       </div>
 
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-4">
+      <div class="row d-flex justify-content-center project">
+        <div class="col-md-4 project-image">
           <img src="./images/github-jobs-api.gif" alt="" srcset="" width="500">
         </div>
-        <div class="col-md-6 d-flex flex-column justify-content-center">
+        <div class="col-md-6 d-flex flex-column justify-content-center project-content">
           <p>
             A web app that lets users search the GitHub Jobs API and also filter their results to a location,
             description
@@ -119,11 +127,11 @@
         <hr>
       </div>
 
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-4">
+      <div class="row d-flex justify-content-center project">
+        <div class="col-md-4 project-image">
           <img src="./images/lostworld.gif" alt="" srcset="" width="500">
         </div>
-        <div class="col-md-6 d-flex flex-column justify-content-center">
+        <div class="col-md-6 d-flex flex-column justify-content-center project-content">
           <p>
             A website created for a tattoo shop which incorporates live Instagram feeds, php contact form with
             recaptcha spam prevention, Google Maps API and AOS.
@@ -174,33 +182,6 @@
               </a>
             </div>
           </div>
-          <!-- <div class="col">
-            <div class="contact-item">
-              <a href="mailto:btseagrave@gmail.com">
-                <i class="fas fa-envelope"></i>
-                <h4>btseagrave@gmail.com</h4>
-              </a>
-            </div>
-            <div class="contact-item">
-              <a href="tel:+447949739222">
-                <i class=" fas fa-phone-alt"></i>
-                <h4>+44 7949 739222</h4>
-              </a>
-            </div>
-            <div class="contact-item">
-              <a href="https://github.com/BenSeagrave/" target="_blank">
-                <i class="fab fa-github"></i>
-                <h4>github.com/BenSeagrave</h4>
-              </a>
-
-            </div>
-            <div class="contact-item">
-              <a href="https://www.linkedin.com/in/ben-seagrave" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-                <h4>linkedin.com/in/ben-seagrave</h4>
-              </a>
-            </div>
-          </div> -->
         </div>
       </section>
   </div>
@@ -210,6 +191,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
   <script src="./scripts.js"></script>
 </body>
 

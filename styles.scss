@@ -130,6 +130,7 @@ section {
 }
 
 .c2a {
+  position: relative;
   a {
     color: black !important;
   }
@@ -139,8 +140,34 @@ section {
   position: fixed;
   right: -125px;
   bottom: 25px;
-  transition: transform 0.6s ease-in-out, background-color 0.2s ease-in-out;
+  transition: transform 0.6s ease-in-out, background-color 0.2s;
 }
-.show {
+.appear {
   transform: translateX(-150px);
+}
+
+// #arrow-svg {
+//   position: absolute;
+//   right: 20px;
+//   bottom: -160px;
+//   .path {
+//     stroke-dasharray: 350;
+//     stroke-dashoffset: 350;
+//     animation: dash 2s ease-out 2s infinite;
+//   }
+// }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 350;
+  }
+  50% {
+    stroke-dashoffset: -0;
+  }
+  60% {
+    stroke-dashoffset: -350;
+  }
+  100% {
+    stroke-dashoffset: -350;
+  }
 }

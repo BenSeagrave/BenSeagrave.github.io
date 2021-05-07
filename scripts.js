@@ -33,5 +33,44 @@ const setupTooltips = (e) => {
   });
 };
 
+// depreciated - need to change
 mediaQuery.addListener(setupTooltips);
 setupTooltips(mediaQuery);
+
+gsap.from("#welcome-text", {
+  delay: 0.5,
+  opacity: 0,
+  duration: 1.5,
+  ease: "back.out(1)",
+  x: 400,
+})
+
+gsap.from(".navbar", {
+  delay: 1.5,
+  opacity: 0,
+  duration: 0.5,
+  ease: "back.out(1)",
+  y: -25,
+})
+
+gsap.from("#skills-icons", {
+  scrollTrigger: {
+    trigger: ".skills",
+    start: "top center",
+  },
+  y: 100,
+  duration: 2,
+  opacity: 0,
+});
+
+const projects = gsap.utils.toArray('.project');
+projects.forEach(project => {
+  gsap.from(project, {
+    x: -300,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: project,
+      start: "top center",
+    }
+  })
+});
